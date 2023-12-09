@@ -37,26 +37,28 @@ class NormalUserSerializer(ModelSerializer):
         return user
 
     def validate_username(self, value):
+        if len(value) == 0:
+            raise ValidationError("Username cannot be blank")
         if len(value) < 6:
             raise ValidationError("Username should be at least 6 characters")
-        if len(value) > 16:
+        elif len(value) > 16:
             raise ValidationError("Username should be at most 16 characters")
-        if not str(value).isalnum():
+        elif not str(value).isalnum():
             raise ValidationError("Username characters should be alphanumeric")
-        if models.User.objects.filter(username=value).exists():
+        elif models.User.objects.filter(username=value).exists():
             raise ValidationError("Username already exists")
         return value
 
     def validate_password(self, value):
         if len(value) < 8:
             raise ValidationError("Password should be at least 8 characters")
-        if len(value) > 32:
+        elif len(value) > 32:
             raise ValidationError("Password should be at most 32 characters")
-        if not hasUpperCase(value):
+        elif not hasUpperCase(value):
             raise ValidationError("Password should contain at least one upper letter")
-        if not hasLowerCase(value):
+        elif not hasLowerCase(value):
             raise ValidationError("Password should contain at least one lower letter")
-        if not hasSpecialCharacter(value):
+        elif not hasSpecialCharacter(value):
             raise ValidationError("Password should contain at least one special letter like !@#$%^&*()")
         return value
 
