@@ -79,6 +79,11 @@ TEMPLATES = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+
 WSGI_APPLICATION = 'rock_paper_scissors.wsgi.application'
 
 # Database
@@ -86,7 +91,7 @@ WSGI_APPLICATION = 'rock_paper_scissors.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.posgresql_psycopg2',
         'NAME': 'backend_database',
         'USER': 'postgres',
         'PASSWORD': '12345678',
@@ -134,4 +139,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.User'
-
