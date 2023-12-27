@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'rock_paper_scissors.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.posgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'backend_database',
         'USER': 'postgres',
         'PASSWORD': '12345678',

@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import play_game, view_scoreboard
+from . import views
 
 app_name = 'game'
 
 urlpatterns = [
-    path('play/', play_game, name='play_game'),
-    path('scoreboard/', view_scoreboard, name='view_scoreboard'),
+    path('game/joingame/', views.JoinGame.as_view()),
+    path('game/playround/', views.PlayRound.as_view()),
+    path('game/getscore/', views.UpdateScore.as_view()),
+    path('game/scoreboard/', views.ViewScoreboard.as_view()),
 ]
