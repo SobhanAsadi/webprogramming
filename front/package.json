@@ -1,0 +1,32 @@
+{
+  "name": "RockPaperScissors",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://TeodorKolev.github.io/RockPaperScissors",
+  "dependencies": {
+    "18": "^0.0.0",
+    "bootstrap": "^3.3.7",
+    "react": "^16.14.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.14.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "^1.0.17",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "gh-pages": "^1.0.0",
+    "redux-devtools": "^3.4.0",
+    "webpack": "^3.8.1"
+  }
+}
