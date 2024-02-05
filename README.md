@@ -4,6 +4,7 @@ Welcome to the Ultimate Rock, Paper, Scissors Game! This is a fun and interactiv
 
 # Contributers
 Group number=10
+
 Student numbers:
 - 400104845
 - 400109916
