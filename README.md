@@ -3,7 +3,7 @@
 Welcome to the Ultimate Rock, Paper, Scissors Game! This is a fun and interactive game where you can test your luck and strategy skills against the computer.
 
 # Contributers
-Group number=10
+Group number:10
 
 Student numbers:
 - 400104845
@@ -30,6 +30,8 @@ These instructions will get you a copy of the project up and running on your loc
 - Python 3
 - pip
 - virtualenv
+- docker
+- docker-compose
 
 ### Installing
 
