@@ -1,0 +1,40 @@
+/* Home.css */
+
+.h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.home p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.home ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.home ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.login-signup{
+    font-size: 2em;
+    color: #ff6347; /* Tomato color */
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+}
+.home-image {
+    width: 300px;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.2s; /* Animation */
+}
